@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Mono&family=Poppins:wght@500&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/59a5a265e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <form class="search-city" id="enter-city">
+      <input
+        type="text"
+        placeholder="Enter a city"
+        class="enter-city"
+        autofocus
+        id="city-name"
+      />
+      <input type="submit" value="search" class="search-button" />
+    </form>
+    <h1 id="current-city">Amsterdam</h1>
+    <br />
+    <div class="current-city">
+      <span class="today" id="today">Today </span>
+      <br />
+      <span class="today"
+        ><i class="fa-sharp fa-solid fa-snowflake snowflake"> </i>
+
+        <span class="temperature" id="temperature">17 °C</span>
+      </span>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          Tuesday<br /><i class="fa-solid fa-cloud cloud"></i> 8°C
+        </div>
+        <div class="col-2">
+          Wednesday <br /><i class="fa-solid fa-cloud-sun cloud-sun"></i> 10°C
+        </div>
+        <div class="col-2">
+          Thursday<br /><i class="fa-sharp fa-solid fa-snowflake snowflake">
+          </i>
+          5°C
+        </div>
+        <div class="col-2">
+          Friday<br /><i class="fa-solid fa-sun"></i> 10°C
+        </div>
+        <div class="col-2">
+          Saturday<br /><i class="fa-solid fa-cloud-sun cloud-sun"></i> 10°C
+        </div>
+        <div class="col-2">
+          Sunday<br /><i class="fa-sharp fa-solid fa-snowflake snowflake"> </i>
+          2°C
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
